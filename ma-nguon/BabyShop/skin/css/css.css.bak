@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     border: 0pt none;
+     font: inherit;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+}
+
+body {
+     line-height: 1;
+}
+
+ol, ul {
+     list-style: none outside none;
+}
+
+blockquote, q {
+     quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+     content: none;
+}
+
+table {
+     border-collapse: collapse;
+     border-spacing: 0pt;
+}
+a{
+	text-decoration:none;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	font-size:0!important;
+}
+ 
+.clearfix {
+	display: inline-block;
+	width:100%;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+/*---end reset---*/
+
+body{
+	font-family:helvetica;
+	font-size:12px;
+	color:#fff;
+	background:url(../img/bg.jpg) no-repeat fixed;
+}
+
+a{
+	color:#fff;
+}
+
+.main{
+    width:600px;
+    margin:150px Auto;
+}
+
+.navigation{
+	display:inline-block;
+	position:relative;
+	perspective: 2000px;
+	-moz-perspective: 2000px;
+	-webkit-perspective: 2000px;
+	-o-perspective: 2000px;
+	-ms-perspective: 2000px;
+}
+
+.navigation li{
+	display:inline-block;
+	position:relative;
+	float:left;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+
+	transform-style: preserve-3d;  
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;  
+	-ms-transform-style: preserve-3d;  
+}
+
+.navigation li:first-child span{
+	border-radius:3px 0 0 3px;
+}
+
+.navigation li:last-child span{
+	border-radius:0 3px 3px 0;
+}
+
+.navigation li:first-child a{
+	border-radius:3px 0 0 3px;
+}
+
+.navigation li:last-child a{
+	border-radius:0 3px 3px 0;
+}
+
+.navigation span{
+	box-shadow:0 0 5px rgba(0,0,0,0.5);
+    float:left;
+    display:block;
+    padding:0px 20px;
+	height:30px;
+	line-height:30px;
+    background-color:red;
+    position:relative;
+	background-image:linear-gradient(top,#4a4a4a,#1f1f1f);
+	background-image:-moz-linear-gradient(top,#4a4a4a,#1f1f1f);
+	background-image:-webkit-linear-gradient(top,#4a4a4a,#1f1f1f);
+	background-image:-o-linear-gradient(top,#4a4a4a,#1f1f1f);
+	background-image:-ms-linear-gradient(top,#4a4a4a,#1f1f1f);
+	transform:translateZ(15px);
+	-moz-transform:translateZ(15px);
+	-webkit-transform:translateZ(15px);
+	-o-transform:translateZ(15px);
+	-ms-transform:translateZ(15px);
+	cursor:pointer;
+}
+
+.navigation a{
+	box-shadow:0 0 5px rgba(0,0,0,0.5);
+    position:absolute;
+    top:15px;
+    left:0;
+    display:block;
+    padding:0 20px;
+	height:30px;
+	line-height:30px;
+    background-image:linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-moz-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-webkit-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-o-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+	background-image:-ms-linear-gradient(bottom,#e3e3e3,#f8f8f8);
+    color:#232323;
+	-webkit-transform:translateZ(0px) rotateX(-90deg);
+	-moz-transform:translateZ(0px) rotateX(-90deg);
+	-o-transform:translateZ(0px) rotateX(-90deg);
+	-ms-transform:translateZ(0px) rotateX(-90deg);
+	transform:translateZ(0px) rotateX(-90deg);
+}
+
+.navigation li:hover{
+	-webkit-transform: translateZ(0px) rotateX(90deg);  
+	-moz-transform: translateZ(0px) rotateX(90deg);  
+}

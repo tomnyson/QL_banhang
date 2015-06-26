@@ -1,0 +1,4 @@
+- tao co so du lieu ten la: babyshop
+- import 1 trong 2 file .SQL babyshop vao trong co so du lieu vua tao
+- cau hinh file: config.php cho phu hop voi co so du lieu
+- copy file BabyShop vao thu muc www cua wamp server de chay
